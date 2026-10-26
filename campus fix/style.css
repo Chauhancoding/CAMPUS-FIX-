@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5fa;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: navy;
+}
+
+form {
+    background: white;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#problemList {
+    max-width: 390px;
+    margin: auto;
+}
+
+.problem {
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #123568;
+}

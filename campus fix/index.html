@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Fix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="campus.png.png"
+     alt="Campus Fix Logo"
+     width="180">
+
+    <h1>Campus Fix</h1>
+    <p>Report Your Campus Problem</p>
+
+    <form id="problemForm">
+        <input type="text" id="title"
+          placeholder="Enter the name" required>
+          
+          <form id="problemForm">
+        <input type="text" id="title"
+          placeholder="Enter the enrollment no." required>
+           
+        
+        
+        <select id="category">
+            <option value="Hostel">Hostel</option>
+            <option value="Mess">Mess</option>
+            <option value="Classroom">Classroom</option>
+            <option value="Other">Other</option>
+        </select>
+        <select id="Hostel Facility category">
+            <option value="">Choose problem</option>
+            <option value="Fan">fan is not working</option>
+             <option value="AC">AC is not working</option>
+              <option value="Light">Light is not working</option>
+               <option value="Wi-Fi">Wi-Fi is not working</option>
+               <option value="Water">Water problem</option>
+                <option value="Room Cleaning"> Room cleaning problem</option>
+                option>
+                 <option value="Other">Other problem</option>
+        </select>
+
+        <textarea id="description"
+                  placeholder="Describe your problem"
+                  required></textarea>
+
+        <button type="submit">Submit Problem</button>
+    </form>
+
+    <h2>Reported Problems</h2>
+    <div id="problemList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
