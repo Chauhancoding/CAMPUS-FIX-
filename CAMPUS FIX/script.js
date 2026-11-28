@@ -1,13 +1,6 @@
 
 "use strict";
 
-// ========================================
-// CAMPUS FIX - COMPLAINT MANAGEMENT SYSTEM
-// Storage: Browser localStorage
-// ========================================
-
-// Demo admin code: Apne project ke liye ise badal sakte ho.
-// IMPORTANT: Frontend mein rakha code secure authentication nahi hai.
 const ADMIN_CODE = "CAMPUS@123";
 const STORAGE_KEY = "campusFixComplaintsV1";
 
@@ -98,10 +91,6 @@ function makeElement(tag, className, text) {
     return element;
 }
 
-// ========================================
-// STUDENT: SUBMIT A COMPLAINT
-// ========================================
-
 complaintForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -168,9 +157,6 @@ complaintForm.addEventListener("submit", function (event) {
     }
 });
 
-// ========================================
-// STUDENT: TRACK A COMPLAINT
-// ========================================
 
 trackForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -211,10 +197,6 @@ trackForm.addEventListener("submit", function (event) {
     trackResult.appendChild(card);
 });
 
-// ========================================
-// ADMIN: LOGIN AND LOGOUT
-// ========================================
-
 adminLoginForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
@@ -242,10 +224,6 @@ adminLogout.addEventListener("click", function () {
     statusFilter.value = "All";
     setMessage(adminMessage, "Admin logout ho gaya.", "success");
 });
-
-// ========================================
-// ADMIN: DASHBOARD AND STATISTICS
-// ========================================
 
 function updateStatistics() {
     document.getElementById("totalCount").textContent = complaints.length;
@@ -399,10 +377,6 @@ function renderAdminDashboard() {
 adminSearch.addEventListener("input", renderAdminDashboard);
 statusFilter.addEventListener("change", renderAdminDashboard);
 
-// ========================================
-// MOBILE NAVIGATION
-// ========================================
-
 menuBtn.addEventListener("click", function () {
     const isOpen = navLinks.classList.toggle("open");
 
@@ -422,10 +396,6 @@ navLinks.querySelectorAll("a").forEach(link => {
         menuBtn.textContent = "☰";
     });
 });
-
-// ========================================
-// FOOTER YEAR
-// ========================================
 
 document.getElementById("currentYear").textContent =
     new Date().getFullYear();
